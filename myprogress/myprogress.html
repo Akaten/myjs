@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>进度条</title>
+    <style>
+        body {
+            font-size: 16px;
+            margin: 0px;
+            padding: 0px;
+            color: #888888;
+            line-height: 22px;
+            height: auto;
+            clear: both;
+            background: #f3f3f3;
+        }
+        input, button, textarea, select, option {
+            font-family: "微软雅黑",Microsoft YaHei;
+        }
+        div, form, img, ul, ol, li, dl, dt, dd, p, tr, td, input, body, strong, span, pre {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background-repeat: no-repeat;
+        }
+        html, body, ul, li, div {
+            margin: 0;
+            padding: 0;
+        }
+        em,i{font-style: normal}
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+         .tips_font .gary_font p{font-size: 12px;color: #666;line-height: 24px;}
+         .progress_box{margin-top: 40px;position: relative}
+         .line_box{position: absolute;top: -7px;width: 719px;height: 10px;z-index: 2}
+         .line_box .border_class{border-right: 1px solid #fff;width: 142px;display: inline-block;height: 10px}
+         .gressfont_class{display: inline-block;width: 137px;font-size: 12px;}
+         .gressfont_box{position: relative;top: -14px;}
+         .gressfont_box .second{position: relative;left: -7px;}
+         .gressfont_box .four{position: relative;left: 5px;}
+         .gressfont_box .five{position: relative;left: 12px;}
+    </style>
+</head>
+<body>
+
+<div class="progress_box">
+    <div class="progress-out" id="prgress" style="width: 719px; height: 10px;">
+        <div class="percent-show" style="line-height: 10px; font-size: 6px;"></div>
+        <div class="progress-in direction-left" ></div>
+    </div>
+    <br>
+    <div class="line_box">
+        <div class="border_class"></div>
+        <div class="border_class"></div>
+        <div class="border_class"></div>
+        <div class="border_class"></div>
+    </div>
+    <div class="gressfont_box">
+        <div class="gressfont_class">0</div>
+        <div class="gressfont_class second">24</div>
+        <div class="gressfont_class">40</div>
+        <div class="gressfont_class four">60</div>
+        <div class="gressfont_class five">85</div>
+        <div class="gressfont_class">100</div>
+    </div>
+</div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.myProgress.js"></script>
+    <link rel="stylesheet" href="./css/myProgress.css">
+
+    <script>
+        function pregressload(value) {
+            if(value>100||value<0){
+                alert("分数统计不对");
+                return
+            }
+            else if(value==null||value==''){
+                var loadlength=0;
+            }
+            else {
+                var value=value;
+                var loadlength=  value/100*719;
+            }
+
+            $("#prgress").myProgress({speed: 1000, percent: loadlength, width: "719px", height: "10px"});
+        }
+
+        pregressload(50);
+
+
+    </script>
+</body>
+</html>
