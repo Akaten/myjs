@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>评测结果</title>
+    <style>
+        body {
+            font-size: 16px;
+            margin: 0px;
+            padding: 0px;
+            color: #888888;
+            line-height: 22px;
+            height: auto;
+            clear: both;
+            background: #f3f3f3;
+        }
+        input, button, textarea, select, option {
+            font-family: "微软雅黑",Microsoft YaHei;
+        }
+        div, form, img, ul, ol, li, dl, dt, dd, p, tr, td, input, body, strong, span, pre {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background-repeat: no-repeat;
+        }
+        html, body, ul, li, div {
+            margin: 0;
+            padding: 0;
+        }
+        em,i{font-style: normal}
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .result_container {width: 900px;    margin: 0px auto 20px auto; background: #fff;padding: 20px 40px;}
+        .result_container  .tips_font .show_tips{margin-left: 192px;position: relative}
+        .result_container  .tips_font .small_font{color: #999;}
+        .result_container  .tips_font .small_font,.result_container .show_tips{display: inline-block}
+        .result_container .tips_font .question_hover:hover{cursor: pointer;}
+        .result_container .tips_font .question_hover img{position: relative;top: 2px;left: 2px;}
+        .result_container .tips_font .gary_font{position: absolute;left: 58px;width: 400px;height: 151px;background: url("./image/kaun.png");background-repeat: no-repeat;background-size: cover;    padding-left: 40px;
+            padding-top: 25px;    top: -77px;display: none}
+        .result_container .tips_font .gary_font p{font-size: 12px;color: #666;line-height: 24px;}
+        .result_container .tips_font .question_hover:hover .gary_font{display: block}
+        .result_container .tips_font .result_font{margin-top: 20px;}
+        .result_container .tips_font .result_font .blod_font{font-size: 48px;font-weight: bold;color: #666;display: inline-block}
+        .result_container .acount_font{margin-left: 142px;}
+        .result_container .bottom_box{font-size: 14px;}
+        .result_container .bottom_box .red_font{color: #ff5600;margin:30px 0 80px 0px;}
+        .result_container .bottom_box{margin:30px 0 80px 0px;}
+        .result_container .btn{border-radius:5px;display: inline-block;width: 112px;height: 42px;line-height: 42px;text-align: center;text-decoration: none;color: #fff;background: #fc862e}
+        .result_container .again_btn{background: #fcbf04;}
+        .result_container .go_fince_btn{margin-left: 30px}
+        .result_container .progress_box{margin-top: 40px;position: relative}
+        .result_container .line_box{position: absolute;top: -7px;width: 719px;height: 10px;z-index: 2}
+        .result_container .line_box .border_class{border-right: 1px solid #fff;width: 142px;display: inline-block;height: 10px}
+        .result_container .gressfont_class{display: inline-block;width: 137px;font-size: 12px;}
+        .result_container .gressfont_box{position: relative;top: -14px;}
+        .result_container .gressfont_box .second{position: relative;left: -7px;}
+        .result_container .gressfont_box .four{position: relative;left: 5px;}
+        .result_container .gressfont_box .five{position: relative;left: 12px;}
+    </style>
+</head>
+<body>
+
+    <div class="result_container">
+        <div class="tips_font">
+            <div  class="small_font">风险承受能力</div>
+            <div class="show_tips">
+                <span class="small_font">分数</span>
+                <a class="question_hover">
+                    <img src="./image/wh.png" alt="">
+                    <div class="gary_font">
+                        <p>25分以下，为保守型用户，不适合出借网贷产品；</p>
+
+                         <p>25分至40分，为稳健型用户，网贷产品出借中的金额最高为20万；</p>
+
+                          <p>41分至60分，为平衡型用户，有基本的风险承受能力；</p>
+
+                            <p>61分至85分，为成长型用户，有一定的风险承受能力；</p>
+
+                           <p> 86分以上，为进取型用户，有较大的风险承受能力。</p>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="result_font">
+                <div class="blod_font">
+                    <span>稳健型</span>
+                </div>
+                <div class="blod_font acount_font">
+                    <span>85</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="progress_box">
+            <div class="progress-out" id="prgress" style="width: 719px; height: 10px;">
+                <div class="percent-show" style="line-height: 10px; font-size: 6px;"></div>
+                <div class="progress-in direction-left" ></div>
+            </div>
+            <br>
+            <div class="line_box">
+                <div class="border_class"></div>
+                <div class="border_class"></div>
+                <div class="border_class"></div>
+                <div class="border_class"></div>
+            </div>
+            <div class="gressfont_box">
+                <div class="gressfont_class">0</div>
+                <div class="gressfont_class second">24</div>
+                <div class="gressfont_class">40</div>
+                <div class="gressfont_class four">60</div>
+                <div class="gressfont_class five">85</div>
+                <div class="gressfont_class">100</div>
+            </div>
+        </div>
+
+        <div class="bottom_box">
+            <p>根据评测结果，您属于<i class="red_font type">稳健型</i>用户，<i class="red_font">网贷产品出借中的金额最高为20万。</i></p>
+        </div>
+
+        <div class="btn_box">
+            <a class="btn again_btn">重新评估</a>
+            <a class="btn go_fince_btn">去出借</a>
+        </div>
+
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.myProgress.js"></script>
+    <link rel="stylesheet" href="./css/myProgress.css">
+
+    <script>
+        function pregressload(value) {
+            if(value>100||value<0){
+                alert("分数统计不对");
+                return
+            }
+            else if(value==null||value==''){
+                var loadlength=0;
+            }
+            else {
+                var value=value;
+                var loadlength=  value/100*719;
+            }
+
+            $("#prgress").myProgress({speed: 1000, percent: loadlength, width: "719px", height: "10px"});
+        }
+
+        pregressload();
+
+
+    </script>
+</body>
+</html>

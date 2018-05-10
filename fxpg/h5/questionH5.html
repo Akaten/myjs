@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)http://www.17sucai.com/preview/1/2016-10-20/jQuery-dtk/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>风险承受能力评估</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+<link href="css/risk_test.css" rel="stylesheet">
+    <style>
+        body{background: #fff}
+       .footer,.header{height: 50px;line-height: 50px;text-align: center;background: #eee;}
+       .question_box .header_font{font-size: 13px;color: #444;padding: 25px 0px;border-bottom: 1px solid #e4e4e4;line-height: 25px;    margin: 0px 15px;}
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        我是头部
+    </div>
+
+
+    <div class="question_box">
+        <div class="header_font">
+            根据评估结果，您的风险承受能力将属于以下五种类型中的一
+            种：保守型、稳健型、平衡型、成长型、进取型。
+        </div>
+        <div class="wrapper">
+            <div id="answer" class="card_wrap" style="display: block;">
+
+                <!--Q1-->
+                <div class="card_cont card1" style="z-index: 10;">
+                    <div class="card">
+                        <p class="question"><span>1、</span>您目前的就业状况如何？</p>
+                        <ul class="select">
+                            <li>
+                                <input id="q1_1" type="radio" name="r-group-1" value="2">
+                                <label for="q1_1">固定职业，收入稳定，变化不大 </label>
+                            </li>
+                            <li>
+                                <input id="q1_2" type="radio" name="r-group-1" value="10">
+                                <label for="q1_2">固定职业，以佣金收入为主 </label>
+                            </li>
+                            <li>
+                                <input id="q1_3" type="radio" name="r-group-1" value="6">
+                                <label for="q1_3">创业者或企业主 </label>
+                            </li>
+                            <li>
+                                <input id="q1_4" type="radio" name="r-group-1" value="1">
+                                <label for="q1_4">自由职业 </label>
+                            </li>
+
+                        </ul>
+                        <div class="card_bottom"><span><b>1</b>/10</span></div>
+                    </div>
+                </div>
+                <!--Q2-->
+                <div class="card_cont card2" style="z-index: 9;">
+                    <div class="card">
+                        <p class="question"><span>2、</span>您期望的投资年化收益？</p>
+                        <ul class="select">
+                            <li>
+                                <input id="q2_1" type="radio" name="r-group-2" value="1">
+                                <label for="q2_1"> 高于同期定期存款 </label>
+                            </li>
+                            <li>
+                                <input id="q2_2" type="radio" name="r-group-2" value="4">
+                                <label for="q2_2">5%左右，要求风险低</label>
+                            </li>
+                            <li>
+                                <input id="q2_3" type="radio" name="r-group-2" value="7">
+                                <label for="q2_3">5%-15%，可承受中等风险</label>
+                            </li>
+                            <li>
+                                <input id="q2_4" type="radio" name="r-group-2" value="10">
+                                <label for="q2_4">15%以上，可承受较高风险</label>
+                            </li>
+
+                        </ul>
+                        <div class="card_bottom"><a class="prev">上一题</a><span><b>2</b>/10</span></div>
+                    </div>
+                </div>
+                <!--Q3-->
+                <div class="card_cont card3" style="z-index: 8;">
+                    <div class="card">
+                        <p class="question"><span>3、</span>您主要计划投资的期限是多久？</p>
+                        <ul class="select">
+                            <li>
+                                <input id="q3_1" type="radio" name="r-group-3" value="1">
+                                <label for="q3_1">3个月以内</label>
+                            </li>
+                            <li>
+                                <input id="q3_2" type="radio" name="r-group-3" value="2">
+                                <label for="q3_2">3-6个月</label>
+                            </li>
+                            <li>
+                                <input id="q3_3" type="radio" name="r-group-3" value="6">
+                                <label for="q3_3">6-12个月 </label>
+                            </li>
+                            <li>
+                                <input id="q3_4" type="radio" name="r-group-3" value="8">
+                                <label for="q3_4">1年-3年&nbsp;</label>
+                            </li>
+                            <li>
+                                <input id="q3_5" type="radio" name="r-group-3" value="10">
+                                <label for="q3_5">3年以上</label>
+                            </li>
+                        </ul>
+                        <div class="card_bottom"><a class="prev">上一题</a><span><b>3</b>/10</span></div>
+                    </div>
+                </div>
+                <!--Q4-->
+                <div class="card_cont" style="z-index: 7;">
+                    <div class="card">
+                        <p class="question"><span>4、</span>您的家庭年收入为（折合人民币）？</p>
+                        <ul class="select">
+                            <li>
+                                <input id="q4_1" type="radio" name="r-group-4" value="1">
+                                <label for="q4_1">10万元以下  </label>
+                            </li>
+                            <li>
+                                <input id="q4_2" type="radio" name="r-group-4" value="6">
+                                <label for="q4_2">10-50万元 </label>
+                            </li>
+                            <li>
+                                <input id="q4_3" type="radio" name="r-group-4" value="8">
+                                <label for="q4_3"> 50-100万元 </label>
+                            </li>
+                            <li>
+                                <input id="q4_4" type="radio" name="r-group-4" value="9">
+                                <label for="q4_4"> 100-500万元 &nbsp;</label>
+                            </li>
+                            <li>
+                                <input id="q4_5" type="radio" name="r-group-4" value="10">
+                                <label for="q4_5">500万元以上 </label>
+                            </li>
+                        </ul>
+                        <div class="card_bottom"><a class="prev">上一题</a><span><b>4</b>/10</span></div>
+                    </div>
+                </div>
+                <!--Q5-->
+                <div class="card_cont" style="z-index: 6;">
+                    <div class="card">
+                        <p class="question"><span>5、</span>在您每年的家庭收入中，可用于金融投资的比例为？ </p>
+                        <ul class="select">
+                            <li>
+                                <input id="q5_1" type="radio" name="r-group-5" value="2">
+                                <label for="q5_1">小于10%  </label>
+                            </li>
+                            <li>
+                                <input id="q5_2" type="radio" name="r-group-5" value="6">
+                                <label for="q5_2">10%至25%</label>
+                            </li>
+                            <li>
+                                <input id="q5_3" type="radio" name="r-group-5" value="8">
+                                <label for="q5_3">25%至50%</label>
+                            </li>
+                            <li>
+                                <input id="q5_4" type="radio" name="r-group-5" value="10">
+                                <label for="q5_4">大于50% &nbsp;</label>
+                            </li>
+
+                        </ul>
+                        <div class="card_bottom"><a class="prev">上一题</a><span><b>5</b>/10</span></div>
+                    </div>
+                </div>
+                <!--Q6-->
+                <div class="card_cont" style="z-index: 5;">
+                    <div class="card">
+                        <p class="question"><span>6、</span>您的投资出现何种程度的波动时，您会呈现明显的焦虑？ </p>
+                        <ul class="select">
+                            <li>
+                                <input id="q6_1" type="radio" name="r-group-6" value="1">
+                                <label for="q6_1">本金无损失，但收益未达预期 </label>
+                            </li>
+                            <li>
+                                <input id="q6_2" type="radio" name="r-group-6" value="2">
+                                <label for="q6_2">出现轻微本金损失 </label>
+                            </li>
+                            <li>
+                                <input id="q6_3" type="radio" name="r-group-6" value="4">
+                                <label for="q6_3">本金10％以内的损失</label>
+                            </li>
+                            <li>
+                                <input id="q6_4" type="radio" name="r-group-6" value="8">
+                                <label for="q6_4">本金20-50％的损失&nbsp;</label>
+                            </li>
+                            <li>
+                                <input id="q6_5" type="radio" name="r-group-6" value="10">
+                                <label for="q6_5">本金50％以上损失</label>
+                            </li>
+                        </ul>
+                        <div class="card_bottom"><a class="prev">上一题</a><span><b>6</b>/10</span></div>
+                    </div>
+                </div>
+                <!--Q7-->
+                <div class="card_cont" style="z-index: 4;">
+                    <div class="card">
+                        <p class="question"><span>7、</span>您投资的目的是？</p>
+                        <ul class="select">
+                            <li>
+                                <input id="q7_1" type="radio" name="r-group-7" value="-2">
+                                <label for="q7_1">资产保值，我不愿意承担任何投资风险</label>
+                            </li>
+                            <li>
+                                <input id="q7_2" type="radio" name="r-group-7" value="1">
+                                <label for="q7_2">资产在保值的基础上，有小幅增长，我可以承担较低的投资风险</label>
+                            </li>
+                            <li>
+                                <input id="q7_3" type="radio" name="r-group-7" value="6">
+                                <label for="q7_3">资产稳健增长，我可以承担一定的投资风险</label>
+                            </li>
+                            <li>
+                                <input id="q7_4" type="radio" name="r-group-7" value="10">
+                                <label for="q7_4">资产迅速增长，我愿意承担很大的投资风险&nbsp;</label>
+                            </li>
+
+                        </ul>
+                        <div class="card_bottom"><a class="prev">上一题</a><span><b>7</b>/10</span></div>
+                    </div>
+                </div>
+                <!--Q8-->
+                <div class="card_cont" style="z-index: 3;">
+                    <div class="card">
+                        <p class="question"><span>8、</span>您对理财产品的看法是？</p>
+                        <ul class="select">
+                            <li>
+                                <input id="q8_1" type="radio" name="r-group-8" value="-2">
+                                <label for="q8_1">理财产品无风险，类似存款</label>
+                            </li>
+                            <li>
+                                <input id="q8_2" type="radio" name="r-group-8" value="1">
+                                <label for="q8_2">理财产品应当保本，但收益不确定 </label>
+                            </li>
+                            <li>
+                                <input id="q8_3" type="radio" name="r-group-8" value="0">
+                                <label for="q8_3">理财产品本金可能产生少量损失</label>
+                            </li>
+                            <li>
+                                <input id="q8_4" type="radio" name="r-group-8" value="10">
+                                <label for="q8_4">理财产品可能大幅亏损，应当仔细选择&nbsp;</label>
+                            </li>
+
+                        </ul>
+                        <div class="card_bottom"><a class="prev">上一题</a><span><b>8</b>/10</span></div>
+                    </div>
+                </div>
+                <!--Q9-->
+                <div class="card_cont" style="z-index: 2;">
+                    <div class="card">
+                        <p class="question"><span>9、</span>您如何理解风险的？</p>
+                        <ul class="select">
+                            <li>
+                                <input id="q9_1" type="radio" name="r-group-9" value="-2">
+                                <label for="q9_1">风险就是损失</label>
+                            </li>
+                            <li>
+                                <input id="q9_2" type="radio" name="r-group-9" value="6">
+                                <label for="q9_2">风险代表不确定性,可能会带来收益,也可能带来损失 </label>
+                            </li>
+                            <li>
+                                <input id="q9_3" type="radio" name="r-group-9" value="8">
+                                <label for="q9_3">风险代表机会,可能带来收益</label>
+                            </li>
+                            <li>
+                                <input id="q9_4" type="radio" name="r-group-9" value="10">
+                                <label for="q9_4">风险代表巨大的额外收益机会&nbsp;</label>
+                            </li>
+
+                        </ul>
+                        <div class="card_bottom"><a class="prev">上一题</a><span><b>9</b>/10</span></div>
+                    </div>
+                </div>
+                <div class="card_cont" style="z-index: 1;">
+                    <div class="card">
+                        <p class="question"><span>10、</span>以下哪项最能说明您的投资经验？</p>
+                        <ul class="select">
+                            <li>
+                                <input id="q10_1" type="radio" name="r-group-10" class="lastques" value="0">
+                                <label for="q10_1">基本没有金融产品相关知识，除存款、国债外，我几乎不投资其他金融产品</label>
+                            </li>
+                            <li>
+                                <input id="q10_2" type="radio" name="r-group-10" class="lastques" value="8">
+                                <label for="q10_2">对金融产品有初步认识，除投资于存款、国债外，偶尔投资于股票、基金等产品</label>
+                            </li>
+                            <li>
+                                <input id="q10_3" type="radio" name="r-group-10" class="lastques" value="9">
+                                <label for="q10_3">对金融产品有一定的理解，投资过存款、国债、银行理财产品、信托产品、股票、基金等产品</label>
+                            </li>
+                            <li>
+                                <input id="q10_4" type="radio" name="r-group-10" class="lastques" value="10">
+                                <label for="q10_4">金融专业人士，长期投资于证券、期货等产品  &nbsp;</label>
+                            </li>
+
+                        </ul>
+                        <div class="card_bottom"><a class="prev">上一题</a><span><b>10</b>/10</span></div>
+                    </div>
+                </div>
+
+
+            </div><!--/card_wrap-->
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        我是脚步s
+    </div>
+        
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/answer.js"></script>
+    <script>
+	$(function(){
+		$("#answer").answerSheet({});
+	})
+
+
+    $(".lastques").click(function(){
+        window.location.href="quesResultH5.html"
+    })
+
+    </script>
+
+
+
+</body></html>

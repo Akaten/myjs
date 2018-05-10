@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)http://www.17sucai.com/preview/1/2016-10-20/jQuery-dtk/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>风险承受能力评估</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+<link href="css/risk_test.css" rel="stylesheet">
+    <style>
+        body {
+            font-size: 16px;
+            margin: 0px;
+            padding: 0px;
+            color: #888888;
+            line-height: 22px;
+            height: auto;
+            clear: both;
+            background: #f3f3f3;
+        }
+        input, button, textarea, select, option {
+            font-family: "微软雅黑",Microsoft YaHei;
+        }
+        div, form, img, ul, ol, li, dl, dt, dd, p, tr, td, input, body, strong, span, pre {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background-repeat: no-repeat;
+        }
+        html, body, ul, li, div {
+            margin: 0;
+            padding: 0;
+        }
+        em,i{font-style: normal}
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{background: #f3f3f3}
+       .footer,.header{height: 50px;line-height: 50px;text-align: center;background: #eee;}
+        .attesSuccess_container .top_box{height: 180px;text-align: center;background: #fff;}
+        .attesSuccess_container .top_box .img_class{margin-top: 50px;text-align: center;display: inline-block;width: 61px;height:49px; }
+        .attesSuccess_container .top_box p{color: #444;font-size: 15px;margin-top: 15px;}
+        .attesSuccess_container .btn_box p{margin-top: 30px;margin-bottom: 25px;}
+        .attesSuccess_container .btn_box{text-align: center}
+        .attesSuccess_container .btn_box .btn{display: inline-block;height: 40px;line-height: 40px;border-radius: 5px;text-align: center;text-decoration: none;color: #fff;width: 157px;}
+        .attesSuccess_container .btn_box .goacount_btn{background: #fdbf03}
+        .attesSuccess_container .btn_box .dargans_btn{background: #ff5600;margin-left: 15px;}
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        我是头部
+    </div>
+
+        <div class="attesSuccess_container">
+            <div class="top_box">
+                <img src="./image/resultico.png" class="img_class">
+                <p class="">认证成功</p>
+            </div>
+
+            <div class="btn_box">
+                <p>为不影响您出借，请进行风险承受能力评测</p>
+                <div>
+                    <a href="" class="btn goacount_btn">前往我的账户</a>
+                    <a href="questionH5.html" class="btn dargans_btn">风险承受能力评测</a>
+                </div>
+            </div>
+        </div>
+
+
+        
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/answer.js"></script>
+    <script>
+	$(function(){
+		$("#answer").answerSheet({});
+	})
+
+
+    $(".lastques").click(function(){
+        window.location.href="quesResultH5.html"
+    })
+
+    </script>
+
+
+
+</body></html>
